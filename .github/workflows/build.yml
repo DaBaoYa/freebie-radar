@@ -38,8 +38,8 @@ jobs:
           platforms: linux/arm64
           push: true
           tags: |
-            ghcr.io/${{ github.repository_owner }}/freebie-radar:latest
-            ghcr.io/${{ github.repository_owner }}/freebie-radar:${{ github.sha }}
+            ghcr.io/dabaoya/freebie-radar:latest
+            ghcr.io/dabaoya/freebie-radar:${{ github.sha }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
@@ -48,5 +48,5 @@ jobs:
           echo "## ✅ 镜像已推送" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo '```' >> $GITHUB_STEP_SUMMARY
-          echo "ghcr.io/${{ github.repository_owner }}/freebie-radar:latest" >> $GITHUB_STEP_SUMMARY
+          echo "ghcr.io/dabaoya/freebie-radar:latest" >> $GITHUB_STEP_SUMMARY
           echo '```' >> $GITHUB_STEP_SUMMARY
